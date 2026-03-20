@@ -1,6 +1,6 @@
 # TheMinutes
 
-> Miss Minutes routes people through the TVA's Sacred Timeline. TheMinutes routes your AI agents through the best MPP service — automatically.
+> Miss Minutes routes people through the TVA's Sacred Timeline. TheMinutes routes your AI agents through the best MPP enabled service — automatically.
 
 **The MPP service router for AI agents on [Tempo](https://tempo.xyz).** Discover, compare, and route to 100+ MPP-compatible services with a single `router.fetch()` call. No hardcoded endpoints. No manual price checking. Just the right service, at the right price, every time.
 
