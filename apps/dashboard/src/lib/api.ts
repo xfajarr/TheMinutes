@@ -37,7 +37,7 @@ export class ApiError extends Error {
 export const api = {
   listProviders(category?: string) {
     return apiFetch<import("./types").ProviderWithMetrics[]>(
-      `/services/${encodeURIComponent(category ?? "")}`,
+      category ? `/services/${encodeURIComponent(category)}` : "/services",
     );
   },
 
@@ -72,7 +72,7 @@ export const api = {
     basePrice: number;
     capabilities: string[];
   }) {
-    return apiFetch<import("./types").Provider>("/providers/register", {
+    return apiFetch<import("./types").Provider>("/services/register", {
       method: "POST",
       body: JSON.stringify(input),
     });

@@ -1,8 +1,8 @@
 # TheMinutes
 
-> Miss Minutes routes people through the TVA's Sacred Timeline. TheMinutes routes your AI agents through the best MPP enabled service — automatically.
+> Miss Minutes routes people through the TVA's Sacred Timeline. TheMinutes routes your AI agents through the best service — and handles the payment automatically.
 
-**The MPP service router for AI agents on [Tempo](https://tempo.xyz).** Discover, compare, and route to 100+ MPP-compatible services with a single `router.fetch()` call. No hardcoded endpoints. No manual price checking. Just the right service, at the right price, every time.
+**The service router for AI agents on [Tempo](https://tempo.xyz).** Discover, compare, and route to 100+ services that accept MPP payment with a single `router.fetch()` call. No hardcoded endpoints. No manual price checking. Just the right service, at the right price, every time.
 
 ```ts
 import { createRouter } from "@theminutes/sdk";
@@ -15,7 +15,7 @@ const result = await router.fetch("web-search", { query: "latest MPP news" });
 
 ## Why TheMinutes
 
-AI agents on MPP need to call external services — web search, compute, data, AI models. Today that means:
+AI agents need to call external services — web search, compute, data, AI models — and pay for them autonomously via MPP. Today that means:
 
 - Manually browsing Tempo's directory to find providers
 - Hardcoding endpoints that go stale when better options launch
