@@ -1,0 +1,24 @@
+{
+  "name": "@theminutes/sdk",
+  "version": "0.1.0",
+  "description": "TheMinutes SDK — MPP service router for AI agents",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "build": "bun build src/index.ts --outdir dist --target browser",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@theminutes/types": "workspace:*",
+    "mppx": "latest"
+  },
+  "devDependencies": {
+    "typescript": "5.9.2",
+    "vitest": "^2.0.0"
+  },
+  "keywords": ["mpp", "tempo", "ai-agents", "payments", "router"]
+}

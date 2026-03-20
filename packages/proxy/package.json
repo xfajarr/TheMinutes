@@ -1,0 +1,23 @@
+{
+  "name": "@theminutes/proxy",
+  "version": "0.0.1",
+  "private": true,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@theminutes/types": "workspace:*",
+    "@theminutes/router": "workspace:*",
+    "mppx": "latest",
+    "postgres": "^3.4.4",
+    "nanoid": "^5.0.7",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "typescript": "5.9.2",
+    "vitest": "^2.0.0"
+  }
+}

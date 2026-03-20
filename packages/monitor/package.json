@@ -1,0 +1,19 @@
+{
+  "name": "@theminutes/monitor",
+  "version": "0.0.1",
+  "private": true,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@theminutes/types": "workspace:*",
+    "postgres": "^3.4.4"
+  },
+  "devDependencies": {
+    "typescript": "5.9.2",
+    "vitest": "^2.0.0"
+  }
+}
